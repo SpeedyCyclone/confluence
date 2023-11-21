@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}

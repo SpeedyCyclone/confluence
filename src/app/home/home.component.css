@@ -1,0 +1,70 @@
+.heading {
+  margin-top: 70px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.body {
+  background-image: url("/assets/bg.png");
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  font-family: Rowdies;
+  margin-top: 0;
+  text-shadow: 5px 5px #fd3649;
+}
+
+.para {
+  backdrop-filter: blur(7.5px);
+  color: white;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  width: 650px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background: rgba(195, 32, 105, 0.12);
+  align-items: center;
+  padding: 10px;
+}
+
+.btn {
+  width: 300px;
+  height: 100px;
+  background-color: #fd3649;
+  margin-top: 40px !important;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Orbitron;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

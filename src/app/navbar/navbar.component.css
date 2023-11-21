@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  padding-right: 25px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  background: transparent !important;
+}
+
+nav ul li {
+  font-size: 20px;
+  font-family: Orbitron;
+  text-transform: capitalize;
+  padding: 25px;
+  font-weight: 600;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  color: #fcee09;
+  border-bottom: 3px solid #fcee09;
+  transition: visibility 1s ease;
+}
