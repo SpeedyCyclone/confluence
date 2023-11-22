@@ -10,6 +10,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
 import { RegisterComponent } from './register/register.component';
 import { FinderComponent } from './finder/finder.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +23,10 @@ import { FinderComponent } from './finder/finder.component';
     AnnouncementsComponent,
     RegisterComponent,
     FinderComponent,
+    ProfileComponent,
+    LoginComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

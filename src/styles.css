@@ -1,12 +1,20 @@
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
   cursor: pointer;
+  margin: 0;
 }
 
 html {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+::placeholder {
+  font-size: 25px;
+  color: white;
+  margin-left: 20px;
 }

@@ -1,3 +1,91 @@
 <div class="body">
   <app-navbar></app-navbar>
+  <h1 class="register">REGISTRATION</h1>
+  <form [formGroup]="this.register" (ngSubmit)="onSubmit()">
+    <div class="group">
+      <div>
+        <label>Cyber ID</label>
+      </div>
+      <div>
+        <input type="text" name="id" formControlName="id" required />
+      </div>
+      <div
+        class="error"
+        *ngIf="
+          register.get('id')?.invalid &&
+          (register.get('id')?.dirty || register.get('id')?.touched)
+        "
+      >
+        Please provide a valid Cyber ID. (Minimum 6 characters)
+      </div>
+    </div>
+    <div class="group">
+      <div>
+        <label>Email</label>
+      </div>
+      <div>
+        <input type="email" name="email" formControlName="email" required />
+      </div>
+      <div
+        class="error"
+        *ngIf="
+          register.get('email')?.invalid &&
+          (register.get('email')?.dirty || register.get('email')?.touched)
+        "
+      >
+        Please provide a valid email.
+      </div>
+    </div>
+    <div class="group">
+      <div>
+        <label>Password</label>
+      </div>
+      <div>
+        <input
+          type="password"
+          name="password"
+          formControlName="password"
+          required
+        />
+      </div>
+      <div
+        class="error"
+        *ngIf="
+          register.get('password')?.invalid &&
+          (register.get('password')?.dirty || register.get('password')?.touched)
+        "
+      >
+        Please provide a valid password. (Minimum 6 characters)
+      </div>
+    </div>
+    <div class="group">
+      <div>
+        <label>Confirm Password</label>
+      </div>
+      <div>
+        <input
+          type="confirm"
+          name="confirm"
+          formControlName="confirm"
+          required
+        />
+      </div>
+      <div
+        class="error"
+        *ngIf="
+          register.errors?.notmatched &&
+          (register.controls['confirm'].dirty ||
+            register.controls['confirm'].touched)
+        "
+      >
+        The passwords are not matching
+      </div>
+    </div>
+    <p class="login">
+      Already have an account? <a class="special" routerLink="/login">Log in</a>
+    </p>
+    <button class="btn" type="submit" [disabled]="!register.valid">
+      Register
+    </button>
+  </form>
 </div>
