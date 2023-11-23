@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Auth } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-navbar',
@@ -8,5 +9,17 @@ import { Router } from '@angular/router';
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-  constructor(public router: Router) {}
+  text = 'register';
+  link = '/register';
+  constructor(public router: Router, public auth: Auth) {
+    this.auth.onAuthStateChanged((user) => {
+      if (user) {
+        this.text = 'Profile';
+        this.link = '/profile';
+      } else {
+        this.text = 'Register';
+        this.link = '/register';
+      }
+    });
+  }
 }

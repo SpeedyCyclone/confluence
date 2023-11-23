@@ -16,7 +16,7 @@
           (register.get('id')?.dirty || register.get('id')?.touched)
         "
       >
-        Please provide a valid Cyber ID. (Minimum 6 characters)
+        Please provide a valid Cyber ID. (Minimum 4 characters)
       </div>
     </div>
     <div class="group">
@@ -73,6 +73,8 @@
       <div
         class="error"
         *ngIf="
+          register.get('confirm')?.invalid &&
+          (register.get('id')?.dirty || register.get('confirm')?.touched) &&
           register.errors?.notmatched &&
           (register.controls['confirm'].dirty ||
             register.controls['confirm'].touched)

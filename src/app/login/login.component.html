@@ -1,1 +1,53 @@
-<p>login works!</p>
+<div class="body">
+  <app-navbar></app-navbar>
+  <h1 class="register">LOGIN</h1>
+  <form [formGroup]="this.login" (ngSubmit)="onSubmit()">
+    <div class="group">
+      <div>
+        <label>Email</label>
+      </div>
+      <div>
+        <input type="email" name="email" formControlName="email" required />
+      </div>
+      <div
+        class="error"
+        *ngIf="
+          login.get('email')?.invalid &&
+          (login.get('email')?.dirty || login.get('email')?.touched)
+        "
+      >
+        Please provide a valid email.
+      </div>
+    </div>
+    <div class="group">
+      <div>
+        <label>Password</label>
+      </div>
+      <div>
+        <input
+          type="password"
+          name="password"
+          formControlName="password"
+          required
+        />
+      </div>
+      <div
+        class="error"
+        *ngIf="
+          login.get('password')?.invalid &&
+          (login.get('password')?.dirty || login.get('password')?.touched)
+        "
+      >
+        Please provide a valid password. (Minimum 6 characters)
+      </div>
+    </div>
+    <p class="login">
+      Dont have an account?
+      <a class="special" routerLink="/register">Register</a>
+    </p>
+    <button class="btn" type="submit" [disabled]="!login.valid">Login</button>
+  </form>
+  <button class="btn1">
+    <a href="https://www.youtube.com/watch?v=a3Z7zEc7AXQ">Use face id</a>
+  </button>
+</div>

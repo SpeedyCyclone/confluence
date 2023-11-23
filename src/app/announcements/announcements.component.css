@@ -1,13 +1,4 @@
 .body {
-  background-image: url("/assets/bg2.png");
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  cursor: pointer;
+  background: url("/assets/bg2.png") top right;
+  background-repeat: repeat;
 }
