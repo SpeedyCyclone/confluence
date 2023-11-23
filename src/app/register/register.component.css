@@ -1,6 +1,8 @@
 .body {
   background: url("/assets/bg2.png") top right;
   background-repeat: repeat;
+  padding-bottom: 150px;
+  height: 100%;
 }
 
 .register {
@@ -101,8 +103,6 @@ input {
   justify-content: center;
   margin: auto;
   border: none;
-  margin-top: 10px !important;
-  margin-bottom: 50px !important;
   background-color: transparent;
   border: 2px solid #fd3649;
 }

@@ -1,4 +1,6 @@
 .body {
   background: url("/assets/bg2.png") top right;
   background-repeat: repeat;
+  padding-bottom: 150px;
+  height: 100%;
 }
