@@ -1,6 +1,79 @@
 .body {
   background: url("/assets/bg2.png") top right;
   background-repeat: repeat;
-  padding-bottom: 150px;
+  padding-bottom: 600px;
   height: 100%;
+}
+
+.head {
+  text-align: center;
+  color: #fff;
+  font-family: Orbitron;
+  font-weight: 900 !important;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.banner {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 75px;
+}
+
+.bannerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+
+.para {
+  color: #fff;
+  font-size: 25px;
+  font-family: Outfit;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 500px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.imgdiv {
+  display: flex;
+  height: 500px;
+  width: 700px;
+  margin-top: 100px !important;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-right: 200px !important;
+}
+
+.img1 {
+  margin: auto;
+  height: 500px;
+}
+
+.img2 {
+  margin: auto;
+  height: 500px;
 }

@@ -9,17 +9,20 @@
 }
 
 .body {
-  background-image: url("/assets/bg.png");
+  background: url("/assets/bg.png") top right;
+  background-repeat: repeat;
+  height: 100%;
+  padding: 0px;
+  margin: 0 !important;
+}
+
+.body1 {
+  background: url("/assets/bg2.png") top right;
+  background-repeat: repeat;
+  padding-bottom: 150px;
   height: 100%;
   margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  cursor: pointer;
+  margin-top: 0 !important;
 }
 
 .main {

@@ -1,6 +1,55 @@
 .body {
   background: url("/assets/bg2.png") top right;
   background-repeat: repeat;
-  padding-bottom: 150px;
+  padding-bottom: 450px;
   height: 100%;
+}
+
+.box {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 200px;
+  width: 900px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 40px;
+}
+
+.name {
+  color: #fff;
+  font-size: 30px;
+  font-family: Roboto Condensed;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-bottom: 0;
+}
+
+.id {
+  color: #fd3649;
+  font-size: 20px;
+  font-family: Outfit;
+  padding-left: 30px;
+  margin-top: 0;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin: 20px;
+  color: #fff;
+  font-size: 25px;
+  font-family: Outfit;
+}
+
+.head {
+  text-align: center;
+  color: #fff;
+  font-family: Orbitron;
+  font-weight: 900 !important;
+  font-size: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
 }

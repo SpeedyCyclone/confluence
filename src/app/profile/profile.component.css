@@ -4,3 +4,48 @@
   padding-bottom: 150px;
   height: 100%;
 }
+
+.box {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 400px;
+  width: 900px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.email,
+.uid {
+  padding-top: 50px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Outfit;
+}
+
+.btn {
+  width: 250px;
+  height: 75px;
+  background-color: #fd3649;
+  margin-top: 40px !important;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Orbitron;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: none;
+}
+
+.head {
+  text-align: center;
+  color: #fff;
+  font-family: Orbitron;
+  font-weight: 900 !important;
+  font-size: 50px;
+  letter-spacing: 1px;
+}

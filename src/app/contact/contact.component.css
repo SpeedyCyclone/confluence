@@ -4,3 +4,119 @@
   padding-bottom: 150px;
   height: 100%;
 }
+
+form {
+  max-width: 500px;
+  width: 95%;
+  margin-top: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.group {
+  margin: 30px 0;
+}
+
+.group > * {
+  display: block;
+}
+
+.group label {
+  font-family: Roboto Condensed;
+  color: white;
+  font-size: 20px;
+}
+
+.group input,
+.group select,
+.group textarea {
+  margin-top: 15px;
+  width: 100%;
+  padding: 15px 0;
+  text-indent: 20px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.get {
+  text-align: center;
+  color: #fff;
+  font-family: Orbitron;
+  font-weight: 900 !important;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .group,
+  .group .label,
+  .input[type="submit"],
+  .group textarea {
+    width: 100%;
+    margin-top: 0;
+  }
+  .flex {
+    padding: 0 30px;
+  }
+  .button {
+    width: 100%;
+  }
+}
+
+.group input {
+  height: 40px;
+  border-radius: 10px;
+}
+
+.group textarea {
+  display: flex;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 250px;
+  height: 75px;
+  background-color: #fd3649;
+  margin-top: 40px !important;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Orbitron;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: none;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 100px #fd364a92;
+  transition: 0.3s ease-in;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.error {
+  color: #e2df0a;
+  padding-top: 20px;
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn:disabled {
+  background-color: rgb(121, 79, 79);
+  cursor: not-allowed;
+}

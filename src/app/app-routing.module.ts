@@ -19,7 +19,7 @@ const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['/login']);
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'announcements', component: AnnouncementsComponent },
+  { path: 'about', component: AnnouncementsComponent },
   { path: 'register', component: RegisterComponent },
   {
     path: 'team',
