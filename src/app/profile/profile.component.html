@@ -2,12 +2,9 @@
   <app-navbar></app-navbar>
   <h1 class="head">Profile</h1>
   <div class="box">
-    <div>
-      <h1 class="email">Email: {{ data1?.email }}</h1>
-    </div>
-    <div>
-      <h1 class="uid">Hashed ID: {{ data1?.uid }}</h1>
-    </div>
+    <img class="img" src="{{ this.link }}" />
+    <h1 class="email">Email: {{ data1?.email }}</h1>
+    <h1 class="uid">Hashed ID: {{ data1?.uid }}</h1>
     <button class="btn" type="submit" (click)="logout()">Logout</button>
   </div>
 </div>

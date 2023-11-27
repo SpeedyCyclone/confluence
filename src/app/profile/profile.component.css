@@ -7,30 +7,38 @@
 
 .box {
   align-items: center;
-  justify-content: center;
   margin: auto;
-  height: 400px;
-  width: 900px;
+  width: 50%;
   background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  width: 800px;
+  height: 500px;
 }
 
-.email,
-.uid {
-  padding-top: 50px;
+.email {
+  margin-top: 0;
   text-align: center;
-  margin-top: 20px;
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
   font-family: Outfit;
+}
+
+.uid {
+  text-align: center;
+  margin-top: 0 !important;
+  color: var(--white);
+  font-weight: bold;
+  font-family: Outfit;
+  margin-bottom: 0 !important;
 }
 
 .btn {
   width: 250px;
   height: 75px;
-  background-color: #fd3649;
+  background-color: var(--red);
   margin-top: 40px !important;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
   font-size: 25px;
   font-family: Orbitron;
@@ -39,13 +47,25 @@
   justify-content: center;
   margin: auto;
   border: none;
+  border-radius: 10px;
 }
 
 .head {
   text-align: center;
-  color: #fff;
+  color: var(--white);
   font-family: Orbitron;
   font-weight: 900 !important;
   font-size: 50px;
   letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.img {
+  border-radius: 50%;
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 0 !important;
 }

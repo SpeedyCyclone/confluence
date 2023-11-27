@@ -8,9 +8,7 @@ import { Router } from '@angular/router';
   styleUrl: './profile.component.css',
 })
 export class ProfileComponent {
-  constructor(private auth: Auth, private Router: Router) {
-    console.log(this.data1);
-  }
+  constructor(private auth: Auth, private Router: Router) {}
   getUser() {
     return this.auth.currentUser;
   }
@@ -21,4 +19,5 @@ export class ProfileComponent {
       this.Router.navigate(['']);
     });
   }
+  link = `https://api.dicebear.com/6.x/adventurer/svg?seed=${this.data1?.uid}`;
 }

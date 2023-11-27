@@ -1,6 +1,6 @@
 .heading {
-  margin-top: 70px;
-  color: #fff;
+  margin-top: 30px;
+  color: var(--white);
   text-align: center;
   font-family: Roboto Condensed;
   font-size: 45px;
@@ -16,22 +16,13 @@
   margin: 0 !important;
 }
 
-.body1 {
-  background: url("/assets/bg2.png") top right;
-  background-repeat: repeat;
-  padding-bottom: 150px;
-  height: 100%;
-  margin: 0;
-  margin-top: 0 !important;
-}
-
 .main {
   font-size: 100px;
   color: white;
   text-align: center;
   font-family: Rowdies;
-  margin-top: 0;
-  text-shadow: -5px 5px #fd3649;
+  margin: 0;
+  text-shadow: -5px 5px var(--red);
   letter-spacing: 5px;
 }
 
@@ -55,10 +46,10 @@
 .btn {
   width: 250px;
   height: 75px;
-  background-color: #fd3649;
+  background-color: var(--red);
   margin-top: 40px !important;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
   font-size: 25px;
   font-family: Orbitron;
@@ -66,15 +57,25 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-top: 30px !important;
   border: none;
+  border-radius: 10px;
 }
 
 .btn:hover {
-  box-shadow: 0px 0px 100px #fd364a92;
+  box-shadow: 0px 0px 100px var(--shadow);
   transition: 0.3s ease-in;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+.date {
+  text-align: center;
+  color: white;
+  font-family: Outfit;
+  margin-top: 10px;
+  font-size: 30px;
 }

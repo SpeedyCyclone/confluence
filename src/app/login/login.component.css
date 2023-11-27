@@ -6,7 +6,7 @@
 }
 
 .register {
-  color: #fff;
+  color: var(--white);
   font-family: Orbitron;
   font-size: 70px;
   font-weight: 700;
@@ -17,7 +17,7 @@
 }
 
 label {
-  color: #d7d7d7;
+  color: var(--grey);
   font-family: Roboto Condensed;
   font-size: 30px;
   font-weight: 600;
@@ -34,9 +34,9 @@ form {
 
 input {
   background: none;
-  border: 2px solid #fd3649;
+  border: 2px solid var(--red);
   border-radius: 10px;
-  width: 90%;
+  width: 60%;
   height: 40px;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -47,14 +47,14 @@ input {
 .login {
   margin-top: 0;
   margin-left: 80px;
-  color: #d7d7d7;
+  color: var(--grey);
   font-family: Roboto Condensed;
   font-size: 20px;
   font-weight: normal;
 }
 
 .special {
-  color: #e2df0a;
+  color: var(--yellow);
   font-family: Roboto Condensed;
   text-decoration: underline;
 }
@@ -62,9 +62,9 @@ input {
 .btn {
   width: 300px;
   height: 60px;
-  background-color: #fd3649;
+  background-color: var(--red);
   text-align: center;
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
   font-size: 25px;
   font-family: Orbitron;
@@ -75,10 +75,11 @@ input {
   border: none;
   margin-top: 50px !important;
   margin-bottom: 10px !important;
+  border-radius: 10px;
 }
 
 .error {
-  color: #e2df0a;
+  color: var(--yellow);
   padding-bottom: 10px;
   font-family: Roboto Condensed;
   font-size: 20px;
@@ -86,15 +87,16 @@ input {
 }
 
 .btn:disabled {
-  background-color: rgb(121, 79, 79);
+  background-color: var(--grey);
   cursor: not-allowed;
+  color: var(--black);
 }
 
 .btn1 {
   width: 300px;
   height: 60px;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
   font-size: 25px;
   font-family: Orbitron;
@@ -106,10 +108,11 @@ input {
   margin-top: 10px !important;
   margin-bottom: 50px !important;
   background-color: transparent;
-  border: 2px solid #fd3649;
+  border: 2px solid var(--red);
+  border-radius: 10px;
 }
 
 .btn1 a {
-  color: #fd3649;
+  color: var(--red);
   text-decoration: none;
 }

@@ -1,16 +1,16 @@
 nav {
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   padding-right: 25px;
   background-color: rgba(0, 0, 0, 0);
   margin: 0;
+  margin-bottom: 20px !important;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  background: transparent !important;
 }
 
 nav ul li {
@@ -28,8 +28,8 @@ nav ul li a {
 }
 
 .active {
-  color: #fcee09;
-  border-bottom: 3px solid #fcee09;
+  color: var(--yellow);
+  border-bottom: 3px solid var(--yellow);
   transition: visibility 1s ease;
 }
 
